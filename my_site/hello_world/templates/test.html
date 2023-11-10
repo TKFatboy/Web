@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+   <body>
+      <h2>Comment Test</h2>
+      <h3>Comment </h3>
+      <form id="myForm">
+         <textarea id ="userComment" rows="4" cols="50" name="comment"> </textarea>
+         <br><br>
+         <input type="button" onclick="myFunction()" value="Submit">
+      </form>
+      <h5>Comment :</h5>
+      <p id="comment"></p>
+      <script>
+         function getCookie(name) {
+            var dc = document.cookie;
+            var prefix = name + "=";
+            var begin = dc.indexOf("; " + prefix);
+            if (begin == -1) {
+                begin = dc.indexOf(prefix);
+                if (begin != 0) return null;
+            }
+            else
+            {
+                begin += 2;
+                var end = document.cookie.indexOf(";", begin);
+                if (end == -1) {
+                end = dc.length;
+                }
+            }
+            // because unescape has been deprecated, replaced with decodeURI
+            //return unescape(dc.substring(begin + prefix.length, end));
+            return decodeURI(dc.substring(begin + prefix.length, end));
+        }
+         function myFunction(){
+          let comment = document.getElementById("userComment").value
+         data = "Comment : "+comment 
+         document.getElementById("comment").innerHTML = data  // display data to paragraph
+         }
+
+         csrftoken = getCookie('csrftoken'); 
+         var request = new XMLHttpRequest();
+         request.open('POST', '/test/');
+         request.setRequestHeader("X-CSRFToken", csrftoken); 
+         request.setRequestHeader("Content-Type", "text/plain;charset=UTF-8"); 
+         const obj = {name: "", age: 30, city: "New York"};
+         const myJSON = JSON.stringify(obj);
+         request.send(myJSON);
+      </script>
+   </body>
+</html>

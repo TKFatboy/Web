@@ -1,0 +1,137 @@
+{% load static %}
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+
+    <link rel="stylesheet" href="{% static 'hello_world/Home.css' %}"/>
+    
+    <title>Home</title>
+
+    <link href="index.css" rel="stylesheet">
+  </head>
+  <body>
+    <div class="topnav">
+      <a class="active" href="http://127.0.0.1:8000/">Home</a>
+      <a href="http://127.0.0.1:8000/info/">Info</a>
+      <a href="http://127.0.0.1:8000/search/#">Category</a>
+      <input type="text" placeholder="Search..">
+    </div>
+    
+    <div class="container">
+      <div class="d-flex bd-highlight mb-3">
+        <div class="me-auto p-2 bd-highlight"><h2>Movies</div>
+        <div class="p-2 bd-highlight">
+        </div>
+      </div>
+      
+      <div class="table-responsive">
+        <table class="table">
+          <thead>
+            <tr>
+              <th scope="col">#</th>
+              <th scope="col">Name</th>
+              <th scope="col">Type</th>
+              <th scope="col">Score</th>
+              <th scope="col">Admin</th>
+            </tr>
+          </thead>
+          <tbody id="mytable">
+            <tr>
+                <th scope="row">1</th>
+                <td>ไตรภาค Planet of the apes</td>
+                <td>Action, Scifi, Adventure</td>
+                <td>7.8/10</td>
+                <td>PHA</td>
+                <td><button onclick="window.location.href='http://127.0.0.1:8000/read/';" class="btn btn-dark">Read</button></td>
+              </tr>
+
+              <tr>
+                <th scope="row">2</th>
+                <td>The Joker</td>
+                <td>Crime ,Drama ,Thriller</td>
+                <td>8.5/10</td>
+                <td>PHA</td>
+                <td><button onclick="window.location.href='http://127.0.0.1:8000/read2/';" class="btn btn-dark">Read</button></td>
+              </tr>
+
+              <tr>
+                <th scope="row">3</th>
+                <td>The Mist</td>
+                <td>Horror ,Sci-Fi ,Thriller</td>
+                <td>8/10</td>
+                <td>PHA</td>
+                <td><button onclick="window.location.href='http://127.0.0.1:8000/read3/';" class="btn btn-dark">Read</button></td>
+              </tr>
+
+              <tr>
+                <th scope="row">4</th>
+                <td>The Thing</td>
+                <td>Horror ,Sci-Fi ,Mystery</td>
+                <td>6.7/10</td>
+                <td>PHA</td>
+                <td><button onclick="window.location.href='http://127.0.0.1:8000/read4/';" class="btn btn-dark">Read</button></td>
+              </tr>
+
+              <tr>
+                <th scope="row">5</th>
+                <td>Fast Franchines</td>
+                <td href="http://127.0.0.1:8000/action">Action</td>
+                <td>/10</td>
+                <td>NAI</td>
+                <td><button onclick="window.location.href='http://127.0.0.1:8000/read5/';" class="btn btn-dark">Read</button></td>
+              </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+
+    <div class="container">
+      <div class="d-flex bd-highlight mb-3">
+        <div class="me-auto p-2 bd-highlight"><h2>แนะนำ</div>
+        <div class="p-2 bd-highlight">
+        </div>
+      </div>
+      
+      <div class="table-responsive">
+        <table class="table">
+          <thead>
+            <tr>
+              <th scope="col">#</th>
+              <th scope="col">Name</th>
+              <th scope="col">Type</th>
+              <th scope="col">Admin</th>
+            </tr>
+          </thead>
+          <tbody id="mytable">
+            <tr>
+                <th scope="row">1</th>
+                <td></td>
+                <td></td>
+                <td>PHA</td>
+                <td><button onclick="window.location.href='http://127.0.0.1:8000/read/';" class="btn btn-dark">Read</button></td>
+              </tr>
+
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.0.16/dist/sweetalert2.all.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
+  </body>
+</html>

@@ -1,0 +1,30 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="{% static 'hello_world/info.css'%}"/>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">    
+        <title>Info</title>
+    </head>
+<body>
+    <div class="topnav">
+        <a class="active" href="http://127.0.0.1:8000/">Home</a>
+        <a href="http://127.0.0.1:8000/info/">Info</a>
+        <a href="http://127.0.0.1:8000/search/#">Category</a>
+        <input type="text" placeholder="Search..">
+      </div>
+    <h1>Information</h1>
+    
+    <center><img src="{% static 'hello_world/picture/กล้า.png' %}"></center><br>
+    <p>Admin Name: TK<br>
+    Movies Type: Action, Adventure, Fantasy, Criminal </p><br>
+    
+    <center><img src="{% static 'hello_world/picture/นาย.png' %}"></center><br>
+    <p>Admin Name: NAI<br>
+    Movies Type: Animation, Action, Fantasy, Horror, Scifi </p><br>
+
+    <center><img src="{% static 'hello_world/picture/ภูผา.png' %}"></center><br>
+    <p>Admin Name: PHA<br>
+    Movies Type: Animation, Horror, Action, Scifi, Scary, Criminal, Drama, Documentary </p><br>
+</html>

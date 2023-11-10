@@ -1,0 +1,36 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="{% static 'hello_world/search_results.css'%}"/>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">    
+        <title>Category</title>
+    </head>
+<body>
+    <div class="topnav">
+        <a class="active" href="http://127.0.0.1:8000/">Home</a>
+        <a href="http://127.0.0.1:8000/info/">Info</a>
+        <a href="http://127.0.0.1:8000/search/#">Category</a>
+        <input type="text" placeholder="Search..">
+      </div>
+    <h1>Search Results</h1>
+    <input class="bar" type="text" id="mySearch" onkeyup="myFunction()" placeholder="Search.." title="Type in a category">
+
+    <ul id="myMenu">
+    <li><h2 href="http://127.0.0.1:8000/action" class="choice">Action</h2></li>
+    <li><h2 href="http://127.0.0.1:8000/adventure" class="choice">Adventure</h2></li>
+    <li><h2 href="http://127.0.0.1:8000/animation" class="choice">Animation</h2></li>
+    <li><h2 href="http://127.0.0.1:8000/comedy" class="choice">Comedy</h2></li>
+    <li><h2 href="http://127.0.0.1:8000/crime" class="choice">Crime</h2></li>
+    <li><h2 href="http://127.0.0.1:8000/drama" class="choice">Drama</h2></li>
+    <li><h2 href="http://127.0.0.1:8000/fantasy" class="choice">Fantasy</h2></li>
+    <li><h2 href="http://127.0.0.1:8000/horror" class="choice">Horror</h2></li>
+    <li><h2 href="http://127.0.0.1:8000/mystery" class="choice">Mystery</h2></li>
+    <li><h2 href="http://127.0.0.1:8000/romance" class="choice">Romance</h2></li>
+    <li><h2 href="http://127.0.0.1:8000/thriller" class="choice">Thriller</h2></li>
+    <li><h2 href="http://127.0.0.1:8000/scifi" class="choice">Scifi</h2></li>
+    <li><h2 href="http://127.0.0.1:8000/western" class="choice">Western</h2></li>
+    </ul>
+</body>
+</html>

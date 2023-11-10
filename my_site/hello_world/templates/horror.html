@@ -1,0 +1,63 @@
+{% load static %}
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+
+    <link rel="stylesheet" href="{% static 'hello_world/pic.css' %}"/>
+    
+    <title>Horror</title>
+
+    <link href="index.css" rel="stylesheet">
+  </head>
+  <body>
+    <div class="topnav">
+      <a class="active" href="http://127.0.0.1:8000/">Home</a>
+      <a href="http://127.0.0.1:8000/info/">Info</a>
+      <a href="http://127.0.0.1:8000/search/#">Category</a>
+      <input type="text" placeholder="Search..">
+    </div>
+    
+    <div class="container">
+      <div class="d-flex bd-highlight mb-3">
+        <div class="me-auto p-2 bd-highlight"><h2>Horror Movies</div>
+        <div class="p-2 bd-highlight">
+        </div>
+      </div>
+
+    <div class="pic">
+      <img src="{% static 'hello_world/picture/The Mist.jpg' %}" onclick="window.location.href='http://127.0.0.1:8000/read3/';">
+      <img src="{% static 'hello_world/picture/The Thing All.jpg' %}" onclick="window.location.href='http://127.0.0.1:8000/read4/';">
+    </div>
+      
+
+    <div class="btn-toolbar" role="toolbar" aria-label="Toolbar with button groups">
+        <center><div class="btn-group me-2" role="group" aria-label="First group"></center>
+          <button type="button" class="btn btn-primary">1</button>
+          <button type="button" class="btn btn-primary">2</button>
+          <button type="button" class="btn btn-primary">3</button>
+          <button type="button" class="btn btn-primary">4</button>
+          <button type="button" class="btn btn-primary">5</button>
+          <button type="button" class="btn btn-primary">6</button>
+          <button type="button" class="btn btn-primary">7</button>
+        </div>
+        
+      </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.0.16/dist/sweetalert2.all.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
+  </body>
+</html>
